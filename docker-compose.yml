@@ -1,6 +1,7 @@
 version: "3"
 services:
   postgres:
+    restart: unless-stopped
     image: postgres:latest
     ports:
       - "5432:5432"
